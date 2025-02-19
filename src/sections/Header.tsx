@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Logo from "@/src/assets/sparkshift-logo.png";
 import ArrowIcon from "@/src/assets/icon.svg";
+import MenuIcon from "@/src/assets/menu.svg";
 
 export const Header = () => {
   return (
@@ -28,9 +29,12 @@ export const Header = () => {
               />
             </a>
           </nav>
-          <button className="bg-[#A8FF35] text-black px-5 py-[10px] rounded-3xl font-semibold">
-            Sign up
-          </button>
+          <button className="hidden md:block btn-fill">Sign up</button>
+          <Image
+            src={MenuIcon}
+            alt="Menu icon"
+            className="h-5 w-5 md:hidden fill-white"
+          />
         </div>
       </div>
     </header>
