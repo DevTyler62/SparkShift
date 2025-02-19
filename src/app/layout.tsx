@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
+import { twMerge } from "tailwind-merge";
 
 const urbanist = Urbanist({
   variable: "--font-geist-sans",
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.variable} antialiased`}>{children}</body>
+      <body className={twMerge(urbanist.className, "antialiased bg-black")}>
+        {children}
+      </body>
     </html>
   );
 }
