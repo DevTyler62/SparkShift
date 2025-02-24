@@ -5,7 +5,7 @@ import MenuIcon from "@/src/assets/menu.svg";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 backdrop-blur-sm z-20">
+    <header className="sticky top-0 backdrop-blur-sm z-20 bg-black">
       <div className="container py-5">
         <div className="flex items-center justify-between">
           <Image src={Logo} alt="Spark Shift logo" width={125} height={27} />

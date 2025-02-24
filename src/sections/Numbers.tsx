@@ -53,7 +53,7 @@ function CheckID({ id }: { id: any }) {
 
 export const Numbers = () => {
   return (
-    <section className="bg-white pt-14 pb-14">
+    <section className="bg-white pt-24 pb-24">
       <div className="container">
         <div className="md:flex gap-4">
           {numbersData.map(({ id, title, desc, icon, iconAlt, iconText }) => (

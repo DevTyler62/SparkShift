@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={twMerge(urbanist.className, "antialiased bg-black")}>
+      <body className={twMerge(urbanist.className, "antialiased bg-white")}>
         {children}
       </body>
     </html>
