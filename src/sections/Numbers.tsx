@@ -54,13 +54,15 @@ function CheckID({ id }: { id: any }) {
 export const Numbers = () => {
   return (
     <section className="bg-white pt-24 pb-24">
-      <div className="container">
-        <div className="md:flex gap-4">
+      <div className="mr-auto ml-auto px-10">
+        <div className="md:flex items-center justify-evenly gap-4">
           {numbersData.map(({ id, title, desc, icon, iconAlt, iconText }) => (
             <React.Fragment key={id}>
               <div key={id}>
                 <h1 className="text-7xl md:text-8xl lg:text-9xl">{title}</h1>
-                <p className="text-[#6B7280] mt-5">{desc}</p>
+                <div className="md:max-w-[300px]">
+                  <p className="text-[#6B7280] mt-5">{desc}</p>
+                </div>
                 <div className="mt-8 inline-flex items-center gap-2 bg-[#A8FF35] w-fit pt-1 pb-1 pr-2 pl-2 border-2 border-black rounded-3xl">
                   <Image
                     src={icon}

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Unlock = () => {
   return (
-    <section className="bg-[#FAFAFA] sm:pt-14 sm:pb-14 pt-5 md:mb-64">
+    <section className="bg-[#FAFAFA] sm:pt-14 sm:pb-14 pt-5 md:mb-24">
       <div className="container">
         <div className="md:flex justify-between items-center gap-10">
           <div className="md:w-[527px]">
