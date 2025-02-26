@@ -8,7 +8,7 @@ export const Unlock = () => {
       <div className="container">
         <div className="md:flex justify-between items-center gap-10">
           <div className="md:w-[527px]">
-            <h2 className="text-4xl lg:text-5xl font-medium tracking-tight md:leading-[3rem] lg:leading-[4rem]">
+            <h2 className="section-heading">
               Unlock Your Brands Full Potential with Expert Marketing Solutions
             </h2>
             <p className="mt-8">

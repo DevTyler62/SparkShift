@@ -37,4 +37,7 @@
   .btn {
     @apply px-5 py-[10px] rounded-3xl font-semibold;
   }
+  .section-heading {
+    @apply text-4xl lg:text-5xl font-medium tracking-tight md:leading-[3rem] lg:leading-[4rem];
+  }
 }
