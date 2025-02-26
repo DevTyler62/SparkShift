@@ -40,4 +40,7 @@
   .section-heading {
     @apply text-4xl lg:text-5xl font-medium tracking-tight md:leading-[3rem] lg:leading-[4rem];
   }
+  .company-logos {
+    @apply h-8 w-auto;
+  }
 }

@@ -3,6 +3,7 @@ import { Hero } from "../sections/Hero";
 import { Numbers } from "../sections/Numbers";
 import { Unlock } from "../sections/Unlock";
 import { Partner } from "../sections/Partner";
+import { Logos } from "../sections/Logos";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Numbers />
       <Unlock />
       <Partner />
+      <Logos />
     </>
   );
 }
