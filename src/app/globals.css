@@ -43,4 +43,11 @@
   .company-logos {
     @apply h-8 w-auto;
   }
+  .parent[data-isOpen="true"] {
+    width: 400px;
+    height: 400px;
+  }
+  .check-click[data-isOpen="true"] {
+    display: block;
+  }
 }

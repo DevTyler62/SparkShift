@@ -4,6 +4,7 @@ import { Numbers } from "../sections/Numbers";
 import { Unlock } from "../sections/Unlock";
 import { Partner } from "../sections/Partner";
 import { Logos } from "../sections/Logos";
+import { Optimization } from "../sections/Optimization";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Unlock />
       <Partner />
       <Logos />
+      <Optimization />
     </>
   );
 }
