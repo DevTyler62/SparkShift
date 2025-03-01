@@ -5,6 +5,7 @@ import { Unlock } from "../sections/Unlock";
 import { Partner } from "../sections/Partner";
 import { Logos } from "../sections/Logos";
 import { Optimization } from "../sections/Optimization";
+import { Footer } from "../sections/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Partner />
       <Logos />
       <Optimization />
+      <Footer />
     </>
   );
 }
