@@ -43,11 +43,7 @@
   .company-logos {
     @apply h-8 w-auto;
   }
-  .parent[data-isOpen="true"] {
-    width: 400px;
-    height: 400px;
-  }
-  .check-click[data-isOpen="true"] {
-    display: block;
+  .footer-heading {
+    @apply text-white text-[18px] font-semibold mb-4;
   }
 }

@@ -21,9 +21,7 @@ export const Footer = () => {
         <div className="flex flex-col-reverse gap-8 md:flex-row md:justify-between">
           <div>
             <div className="mb-12">
-              <h4 className="text-white text-[18px] font-semibold mb-4">
-                Address
-              </h4>
+              <h4 className="footer-heading">Address</h4>
               <p className="text-white md:w-[250px]">
                 473 Alton Ave. San Bernardino, CA 92404
               </p>
@@ -37,9 +35,7 @@ export const Footer = () => {
           </div>
           <div className="flex gap-5">
             <div>
-              <h4 className="text-white text-[18px] font-semibold mb-4">
-                Company
-              </h4>
+              <h4 className="footer-heading">Company</h4>
               <ul className="flex flex-col gap-2">
                 <li className="text-white">About</li>
                 <li className="text-white">Features</li>
@@ -48,9 +44,7 @@ export const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-white text-[18px] font-semibold mb-4">
-                Services
-              </h4>
+              <h4 className="footer-heading">Services</h4>
               <ul className="flex flex-col gap-2">
                 <li className="text-white">SEO Tools</li>
                 <li className="text-white">Marketplace</li>
@@ -58,9 +52,7 @@ export const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-white text-[18px] font-semibold mb-4">
-                Help Center
-              </h4>
+              <h4 className="footer-heading">Help Center</h4>
               <ul className="flex flex-col gap-2">
                 <li className="text-white">Community</li>
                 <li className="text-white">Contact</li>
