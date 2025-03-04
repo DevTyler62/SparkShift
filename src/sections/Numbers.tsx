@@ -5,12 +5,11 @@ import jobIcon from "@/src/assets/job-icon.png";
 import yearsIcon from "@/src/assets/years-icon.png";
 import LineH from "@/src/assets/line-h.png";
 import LineV from "@/src/assets/line-v.png";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import {
   motion,
   useMotionValue,
   useTransform,
-  animate,
   useAnimate,
   useInView,
 } from "framer-motion";
@@ -19,7 +18,7 @@ interface Number {
   id: number;
   title: string;
   desc: string;
-  icon: any;
+  icon: string | StaticImageData;
   iconAlt: string;
   iconText: string;
   num: number;
@@ -58,7 +57,7 @@ const numbersData: Number[] = [
   },
 ];
 
-function CheckID({ id }: { id: any }) {
+function CheckID({ id }: { id: number }) {
   if (id === 0 || id === 1) {
     return (
       <div className="mt-10 mb-10 flex justify-center items-center">
@@ -77,7 +76,7 @@ export const Numbers = () => {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
 
-  function countNum(id: number) {
+  function CountNum(id: number) {
     const count = useMotionValue(0);
     const rounded = useTransform(() => Math.round(count.get()));
 
@@ -99,7 +98,7 @@ export const Numbers = () => {
               <div key={id}>
                 <div ref={scope} className="flex">
                   <motion.h1 className="text-7xl md:text-8xl lg:text-9xl">
-                    {countNum(id)}
+                    {CountNum(id)}
                   </motion.h1>
                   <h1 className="text-7xl md:text-8xl lg:text-9xl">{title}</h1>
                 </div>

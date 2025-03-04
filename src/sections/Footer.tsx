@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className="container">
         <div className="mb-10">
           <h1 className="text-white text-5xl mb-4 md:text-7xl lg:text-8xl">
-            Let's Collaborate
+            Let&apos;s Collaborate
           </h1>
           <Image src={LongLine} alt="Long dividing line" />
         </div>
@@ -66,7 +66,7 @@ export const Footer = () => {
         <Image
           src={LeftGradient}
           alt="Gradient image on the left side"
-          className="absolute -top-[350px] "
+          className="absolute -top-[350px]"
         />
         <Image
           src={RightGradient}

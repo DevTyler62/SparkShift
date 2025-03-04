@@ -9,8 +9,8 @@ interface Item {
   id: string;
   title: string;
   text: string;
-  isOpen: any;
-  onClick: any;
+  isOpen: boolean;
+  onClick: (id: string) => void;
 }
 
 const AccordionItem = ({ id, title, text, isOpen, onClick }: Item) => {
