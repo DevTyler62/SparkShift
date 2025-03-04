@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 import Marketing from "@/src/assets/marketing-icon.png";
 import Analysis from "@/src/assets/analysis-icon.png";
 import Recycle from "@/src/assets/recycle-icon.png";
 import ArrowRight from "@/src/assets/arrow-right-icon.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const cardData = [
   {
@@ -53,9 +55,22 @@ export const Partner = () => {
       <div className="sm:max-w-md md:max-w-7xl mr-auto ml-auto px-8">
         <div className="flex sm:flex-col md:flex-row gap-5 lg:gap-12  pt-14">
           {cardData.map(({ id, icon, iconAlt, cardTitle, cardText }) => (
-            <div
+            <motion.div
               key={id}
               className="bg-[#FAFAFA] px-12 py-16 flex flex-col gap-8"
+              whileHover={{
+                backgroundColor: "#A8FF35",
+                border: "1px solid black",
+                fontWeight: 600,
+              }}
+              whileTap={{
+                backgroundColor: "#A8FF35",
+                border: "1px solid black",
+                fontWeight: 600,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             >
               <Image src={icon} alt={iconAlt} />
               <div className="flex gap-3 items-center">
@@ -67,7 +82,7 @@ export const Partner = () => {
                 />
               </div>
               <p>{cardText}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
