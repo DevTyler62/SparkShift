@@ -57,31 +57,42 @@ export const Partner = () => {
           {cardData.map(({ id, icon, iconAlt, cardTitle, cardText }) => (
             <motion.div
               key={id}
-              className="bg-[#FAFAFA] px-12 py-16 flex flex-col gap-8"
-              whileHover={{
-                backgroundColor: "#A8FF35",
-                border: "1px solid black",
-                fontWeight: 600,
-              }}
-              whileTap={{
-                backgroundColor: "#A8FF35",
-                border: "1px solid black",
-                fontWeight: 600,
-              }}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{
-                duration: 0.5,
+                duration: 0.4,
+                scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
               }}
             >
-              <Image src={icon} alt={iconAlt} />
-              <div className="flex gap-3 items-center">
-                <span className="text-2xl font-medium">{cardTitle}</span>
-                <Image
-                  src={ArrowRight}
-                  alt="Arrow right icon"
-                  className="h-5 w-5"
-                />
-              </div>
-              <p>{cardText}</p>
+              <motion.div
+                key={id}
+                className="bg-[#FAFAFA] px-12 py-16 flex flex-col gap-8"
+                whileHover={{
+                  backgroundColor: "#A8FF35",
+                  border: "1px solid black",
+                  fontWeight: 600,
+                }}
+                whileTap={{
+                  backgroundColor: "#A8FF35",
+                  border: "1px solid black",
+                  fontWeight: 600,
+                }}
+                transition={{
+                  duration: 0.5,
+                }}
+              >
+                <Image src={icon} alt={iconAlt} />
+                <div className="flex gap-3 items-center">
+                  <span className="text-2xl font-medium">{cardTitle}</span>
+                  <Image
+                    src={ArrowRight}
+                    alt="Arrow right icon"
+                    className="h-5 w-5"
+                  />
+                </div>
+                <p>{cardText}</p>
+              </motion.div>
             </motion.div>
           ))}
         </div>

@@ -1,13 +1,21 @@
+"use client";
 import Image from "next/image";
 import LeftGradient from "@/src/assets/left-side-gradient.png";
 import RightGradient from "@/src/assets/right-side-gradient.png";
 import React from "react";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
     <section className="pt-32 sm:pb-52 md:pb-[260px] md:pt-34 lg:pt-56 bg-black">
       <div className="container md:w-[1100px]">
-        <div className="flex items-center justify-center flex-col">
+        <motion.div
+          className="flex items-center justify-center flex-col"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ ease: "easeIn", duration: 1 }}
+        >
           <h1 className="pb-1.5 text-[40px] leading-10 md:text-7xl md:leading-[100px] text-center font-medium bg-gradient-to-br from-white from-0% to-[#9B9B9B] to-100% text-transparent bg-clip-text">
             Grow Your Business with Proven Marketing Strategies
           </h1>
@@ -23,7 +31,7 @@ export const Hero = () => {
               Watch A Tutorial
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="relative">
         <Image

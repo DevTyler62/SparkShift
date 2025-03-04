@@ -1,11 +1,19 @@
+"use client";
 import React from "react";
 import Meeting from "@/src/assets/meeting.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const Unlock = () => {
   return (
     <section className="bg-[#FAFAFA] sm:pt-14 sm:pb-14 pt-5 md:mb-24">
-      <div className="container">
+      <motion.div
+        className="container"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ ease: "easeIn", duration: 2 }}
+      >
         <div className="md:flex justify-between items-center gap-10">
           <div className="md:w-[527px]">
             <h2 className="section-heading">
@@ -26,7 +34,7 @@ export const Unlock = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

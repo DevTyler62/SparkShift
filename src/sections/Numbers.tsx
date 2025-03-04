@@ -83,7 +83,7 @@ export const Numbers = () => {
 
     useEffect(() => {
       if (isInView) {
-        const controls = animate(count, numbersData[id].num, { duration: 5 });
+        const controls = animate(count, numbersData[id].num, { duration: 2 });
         return () => controls.stop();
       }
     });
